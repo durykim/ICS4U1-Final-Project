@@ -1,0 +1,432 @@
+<!--HTML PORTION-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--FAVICON (TIGER/WILDCAT EMOJI)-->
+    <link rel="icon" type="image/x-icon" href="tiger-favicon.webp">
+  </head>
+  <body>
+    <!--TAB TITLE-->
+    <title>
+      Other Westmount 
+    </title>
+
+    <!--CLICKING ON WMT LOGO BRINGS YOU TO THE TOP OF THE PAGE-->
+    <a href="#top">
+      <img src="Westmount_Secondary_School_Logo.jpg" alt="wmt logo" class="wmtLogo">
+    </a>
+
+    <!--WEBSITE TITLE-->
+    <h1 class="title" style="text-align: center;">
+      Westmount Secondary School
+    </h1>
+
+    <!--PRESSING ON THIS BUTTON BRINGS YOU TO HWDSB WESTMOUNT SITE ON A NEW TAB-->
+    <a href="https://www.hwdsb.on.ca/westmount/" target="_blank">
+      <button class="original">Original Website</button>
+    </a>
+
+    <!--SOCIAL MEDIA BUTTONS (IMAGE DOUBLE AS BUTTONS)-->
+    <!--REDIRECT TO VARIOUS SOCIAL MEDIA PLATFORMS IN A NEW TAB-->
+    <div class="intro">
+      <div class="logos">
+        <a href="https://www.twitter.com/hwdsb/" target="_blank">
+          <img src="twitter-logo.png" alt="twitter logo" class="twitter">
+        </a>
+      
+        <a href="https://www.facebook.com/hwdsb" target="_blank">
+          <img src="facebook-logo.webp" alt="facebook logo" class="facebook">
+        </a>
+      
+        <a href="https://www.youtube.com/@westmounttech3768/featured" target="_blank">
+          <img src="youtube-logo.webp" alt="youtube logo" class="youtube"> 
+        </a>
+      
+        <a href="https://www.instagram.com/hwdsb/" target="_blank">
+          <img src="instagram.webp" alt="instragram logo" class="instagram">
+        </a>
+      </div>
+
+    <!--INTRODUCTION PARAGRAPH IN THE BEGINNING OF THE WEBSITE-->
+    <p class="description">
+      Located in Hamilton, Ontario stands a building that serves as a school
+      to 1000+ students in grades 9-12. Here lives countless memories of 
+      thousands spanning from 1961 to present day. Although students may say 
+      they hate coming here every morning at 8:40am, there is no denying the resilient 
+      community that resides here. Whether they like it or not, everyone who 
+      comes through here will forever be a Wildcat...	&#128047 I personally have 
+      enjoyed my time at Westmount, and now that I am graduating soon, I wanted to 
+      create this project to commemorate the school I have been attending for the past 4 years.
+    </p>
+
+  </div>
+
+  <!--BUTTON THAT REDIRECTS YOU TO THE CONTACTS SECTION/BOTTOM OF PAGE-->
+  <a href="#contact" id="bottom">
+    <button class="contact-form">Contact</button>
+  </a>
+
+  <!--GALLERY SECTION (PICTURES FROM THE PAST YEAR AS A WILDCAT)-->
+  <h1 class="gallery-header">
+    A Brief Look into a Wildcat's Journey: The Gallery
+  </h1>
+
+  <!--INSERTING IMAGES AND VIDEO-->
+  <div class="gallery-images">
+    <img src="compSci11.jpg" alt="comp sci 11" class="grade11cs">
+    <img src="beforeConcert.jpg" alt="before concert" class="concert">
+    <img src="perfectTitration.jpg" alt="perfect titration" class="titration">
+    <img src="cultureDay.jpg" alt="culture day" class="culture">
+    <img src="blurryGroupPhoto.jpg" alt="blurry group photo" class="group-photo">
+    <img src="busToEV.jpg" alt="bus to EV" class="bus">
+    <!--HAS CONTROLS AND WILL LOOP OVER AND OVER AGAIN-->
+    <video src="lastCsClass.mp4" class="slay" controls loop autoplay>Your browser does not support the video tag.
+    </video>
+  </div>
+  
+  <!--FORM FOR CONTACT SECTION-->
+  <div class="contact-area" style="font-family: monospace; font-size: 18px; font-weight: bold;">
+    <img src="contact-background.jpeg" alt="contact background" class="contact-background">
+    <form method="POST">
+      <div class="contact-name">
+        <label for="name">
+          Full Name
+        </label><br>
+        <input type="text" id="name">
+      </div>
+      <div class="contact-email">
+        <label for="email">
+          Email
+        </label><br>
+        <input type="text" id="email">
+      </div>
+      <div class="contact-subject">
+        <label for="subject">
+          Subject
+        </label><br>
+        <input type="text" id="subject">
+      </div>
+      <div class="contact-content">
+        <label for="content">
+          Content
+        </label><br>
+        <!--HAS EXTRA ROOM (EXPANDABLE TEXT BOX)-->
+        <textarea id="content" name="content" rows="7" cols="50">Please write any inquiries here!</textarea><br>
+      <input type="submit" value="Send">
+      </div>
+    </form>
+    
+    <!--IMAGE OF SCHOOL AT THE BOTTOM OF THE FORM-->
+    <img src="westmount-building.jpeg" alt="westmount building" class="school-picture">
+  </div>
+
+  <!--FOR INTERNAL LINK TO CONTACT SECTION-->
+  <p  id="contact">
+  </p>
+
+  <!--LINK THAT REDIRECTS YOU TO THE TOP OF THE PAGE-->
+  <a href="#top" style="text-align: center; font-family: monospace;">
+    <p>
+      Back to top!
+    </p>
+  </a>
+
+  </body>
+</html>
+
+
+
+
+<!--CSS PORTION-->
+<style>
+.wmtLogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+}
+
+.title {
+  margin-bottom: 50px;
+  font-family: monospace;
+  background-color: rgb(103,171,216);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.gallery-header {
+  text-align: center;
+  position: block;
+  margin-top: 500px;
+  font-family: monospace;
+  background-color: rgb(103,171,216);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.original {
+  font-size: large;
+  font-weight: bold;
+  font-family: monospace;
+  background-color: white;
+  border-color: rgb(103,171,216);
+  border-style: solid;
+  border-width: 1px;
+  color: rgb(103,171,216);
+  border-radius: 9px;
+  cursor: pointer;
+  padding-left: 30px;
+  padding-top: 50px;
+  padding-top: 9px;
+  padding-bottom: 10px;
+  padding-right:16px;
+  padding-left: 16px;
+  margin-left: 1000px;
+  transition: background-color 0.15s,
+  color 0.15s;
+}
+
+.original:hover {
+  background-color: rgb(103,171,216);
+  color: white;
+}
+
+.original:active {
+  opacity: 0.7;
+}
+
+.twitter {
+  justify-content: center;
+  align-items: center;
+  margin-left: 1050px;
+  margin-top: 40px;
+  display: flex;
+  width: 5%;
+  float: right;
+}
+
+.youtube {
+  display: block;
+  margin-top: 45px;
+  margin-left: 1035px;
+  width: 7%;
+  float: right;
+}
+
+.instagram {
+  display: block;
+  margin-top: 50px;
+  margin-left: 1050px;
+  width: 5%;
+  float: right;
+}
+
+.facebook {
+  display: block;
+  margin-top: 40px;
+  margin-left: 1050px;
+  width: 5%;
+  float: right;
+}
+
+.intro {
+  position: absolute;
+  width: 68%;
+  left: 10%;
+  margin-bottom: 200px;
+}
+
+.description {
+  position: absolute;
+  font-size: 18px;
+  width: 500px;
+  margin-left: 200px;
+  font-family: monospace;
+  background-color: #d2e2ec;
+  text-align: center;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: justify;
+  border-radius: 5%;
+}
+
+.grade11cs {
+  display: inline;
+  width: 30%;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  margin-left: 80px;
+  margin-right: 15px;
+  border-radius: 10%;
+  border: #d2e2ec;
+  border-style: solid;
+  border-width: 15px;
+}
+
+.concert {
+  display: inline;
+  width: 20%;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10%;
+  border: #b4d0e2;
+  border-style: solid;
+  border-width: 15px;
+}
+
+.titration {
+  display: inline;
+  width: 30%;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  margin-left: 15px;
+  border-radius: 10%;
+  border: #92c1dc;
+  border-style: solid;
+  border-width: 15px;
+}
+
+.culture {
+  display: inline;
+  width: 30%;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  margin-left: 15px;
+  border-radius: 10%;
+  border: #7cb8dc;
+  border-style: solid;
+  border-width: 15px;
+}
+
+.group-photo {
+  display: inline;
+  width: 30%;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10%;
+  border: #58a6d6;
+  border-style: solid;
+  border-width: 15px;
+}
+
+.bus {
+  display: inline;
+  width: 30%;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  margin-right: 15px;
+  border-radius: 10%;
+  border: #3194d1;
+  border-style: solid;
+  border-width: 15px;
+}
+
+.slay {
+  display: block;
+  width: 25%;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10%;
+  border: #3194d1;
+  border-style: solid;
+  border-width: 15px;
+}
+
+.contact-form {
+  position: absolute;
+  font-size: large;
+  font-weight: bold;
+  font-family: monospace;
+  background-color: white;
+  border-color: rgb(103,171,216);
+  border-style: solid;
+  border-width: 1px;
+  color: rgb(103,171,216);
+  border-radius: 9px;
+  cursor: pointer;
+  padding-left: 30px;
+  padding-top: 50px;
+  padding-top: 9px;
+  padding-bottom: 10px;
+  padding-right:16px;
+  padding-left: 16px;
+  margin-left: 50px;
+  transition: background-color 0.15s,
+  color 0.15s;
+}
+
+.contact-form:hover {
+  background-color: rgb(103,171,216);
+  color: white;
+}
+
+.contact-form:active {
+  opacity: 0.7;
+}
+
+.contact-background {
+  display: relative;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.contact-area {
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+.contact-name {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contact-email {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contact-subject {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contact-content {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.school-picture {
+  position: absolute;
+  top: 87%;
+  left: 50%;
+  width: 20%;
+  transform: translate(-50%, -50%);
+  border-radius: 10%;
+  border-color: #1489d2;
+  border-width: 8px;
+  border-style: solid;
+}
+</style>
